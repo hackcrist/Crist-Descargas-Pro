@@ -22,4 +22,6 @@ pkg update -y && pkg upgrade -y
 pkg install git -y
 git clone https://github.com/hackcrist/Crist-Descargas-Pro.git
 cd Crist-Descargas-Pro
-bash install.sh
+bash ./install.sh
+crist-descargas
+
