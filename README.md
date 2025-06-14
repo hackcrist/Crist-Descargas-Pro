@@ -1,27 +1,44 @@
-# 🎧 Crist-Descargas-Pro v3.0
+# 🎬 Crist-Descargas-Pro v3.0
 
-Bienvenido a **Crist-Descargas-Pro**, tu herramienta definitiva en **Termux** para descargar **videos**, **música** y **películas** de alta calidad de múltiples plataformas como **YouTube**, **TikTok**, **Facebook** y más.
-
----
-
-## 🚀 Funciones principales
-
-- 🎬 Descargar videos en HD (MP4 1080p)
-- 🎵 Descargar música en MP3
-- 🎥 Descargar películas en máxima calidad
-- 🔍 Buscar por nombre (video o música)
-- ⏬ Soporte para TikTok, Facebook, YouTube, etc.
-- ⚡ Descargas ultra rápidas con `aria2`
+**Tu descargador multimedia favorito para Termux.**  
+Soporta YouTube, TikTok, Facebook, y más. Descarga videos, música o películas en segundos.
 
 ---
 
-## 🛠️ Instalación en Termux
+## 🚀 Instalación rápida
 
 ```bash
-pkg update -y && pkg upgrade -y
-pkg install git -y
-git clone https://github.com/hackcrist/Crist-Descargas-Pro.git
-cd Crist-Descargas-Pro
-bash ./install.sh
-crist-descargas
+bash <(curl -sL https://raw.githubusercontent.com/hackcrist/Crist-Descargas-Pro/main/install.sh)
+```
 
+---
+
+## 📦 Características
+
+- ✅ Video HD en MP4
+- ✅ Música en MP3
+- ✅ Películas (máxima calidad)
+- ✅ TikTok y Facebook
+- ✅ Búsqueda por nombre
+- ✅ Interfaz con colores y banner animado
+
+---
+
+## 🧠 Uso
+
+```bash
+crist-descargas
+```
+
+---
+
+## 🛠 Requisitos
+
+- Termux actualizado
+- Conexión a internet
+
+---
+
+## 👤 Autor
+
+Hecho con ❤️ por **Crist**
