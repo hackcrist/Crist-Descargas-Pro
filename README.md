@@ -1,7 +1,8 @@
 # 🎬 Crist-Descargas-Pro v3.0
 
-**Tu descargador multimedia favorito compatible con Termux y Kali Linux.**  
-Soporta YouTube, TikTok, Facebook y más. Descarga videos, música o películas en segundos con interfaz profesional y colores animados.
+**Tu descargador multimedia todo-en-uno para Termux y Kali Linux.**  
+📥 Compatible con **YouTube**, **TikTok**, **Facebook**, y más.  
+🎧 Descarga videos, música o películas en segundos con una interfaz visual **colorida y profesional**.
 
 ---
 
@@ -19,46 +20,64 @@ bash <(curl -sL https://raw.githubusercontent.com/hackcrist/Crist-Descargas-Pro/
 
 ```bash
 git clone https://github.com/hackcrist/Crist-Descargas-Pro.git
+```
+
+
+```bash
 cd Crist-Descargas-Pro
 ```
 
-2. Dale permisos de ejecución y ejecuta el script:
+2. Da permisos y ejecuta:
 
 ```bash
 chmod +x crist-descargas.sh
+```
+
+
+```bash
 ./crist-descargas.sh
 ```
 
-✅ Recomendación: Instala `yt-dlp`, `aria2`, `figlet`, `lolcat` con:
+✅ **Recomendación:** Instala dependencias (si aún no las tienes):
 
 ```bash
 sudo apt update && sudo apt install -y python3-pip aria2 figlet ruby
+```
+
+
+```bash
 pip3 install -U yt-dlp
+```
+
+
+```bash
 sudo gem install lolcat
 ```
 
 ---
 
-## 📦 Características
+## 📦 Características principales
 
-- ✅ Video HD en MP4  
-- ✅ Música en MP3  
-- ✅ Películas (máxima calidad)  
-- ✅ TikTok y Facebook  
-- ✅ Búsqueda por nombre  
-- ✅ Interfaz con colores y banner animado  
-- ✅ Compatible con **Termux y Kali Linux**
+- ✅ Descarga videos en **HD (MP4)**
+- ✅ Descarga música en **MP3**
+- ✅ Soporte para **películas completas**
+- ✅ Compatible con **TikTok**, **Facebook** y más
+- ✅ Búsqueda automática por nombre o link
+- ✅ Interfaz animada con colores y **banner personalizado**
+- ✅ Funciona en **Termux y Kali Linux**
 
 ---
 
 ## 🧠 Uso
 
-### En Termux:
+### En Termux
+
 ```bash
 crist-descargas
 ```
 
-### En Kali Linux:
+### En Kali Linux
+
 ```bash
 ./crist-descargas.sh
 ```
@@ -67,12 +86,33 @@ crist-descargas
 
 ## 🛠 Requisitos
 
-- Terminal con bash
-- Conexión a internet
-- Python3 y pip (ya incluidos en Kali/Termux)
+- ✅ Terminal con bash  
+- ✅ Conexión a internet  
+- ✅ Python 3 y pip (ya vienen en Kali y Termux)
+
+---
+
+## ⭐ ¡Apoya el proyecto!
+
+¿Te gustó esta herramienta?  
+**Dale una estrella ⭐ al repositorio** y compártelo para que más lo conozcan.
+
+👉 [https://github.com/hackcrist/Crist-Descargas-Pro](https://github.com/hackcrist/Crist-Descargas-Pro)
 
 ---
 
 ## 👤 Autor
 
-Hecho con ❤️ por **Crist**
+Hecho con ❤️ por [Crist](https://github.com/hackcrist)
+
+---
+
+## 👥 Colaboradores
+
+- 🤝 **Hackabner** – Colaborador de código
+
+---
+
+## 🛡️ Licencia
+
+Este proyecto usa la licencia **Apache 2.0** – [Ver LICENCIA](LICENSE)
