@@ -1,28 +1,28 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-GREEN='\033[1;32m'
-BLUE='\033[1;34m'
-YELLOW='\033[1;33m'
-RED='\033[1;31m'
-NC='\033[0m'
+REPO="https://github.com/hackcrist/CristBot-MD"
+BOT_DIR="$HOME/CristBot-MD"
+DB_FILE="database.json"
 
 clear
-echo -e "${GREEN}Instalando Crist-Descargas-Pro v3.0...${NC}"
+echo -e "\033[1;32m🚀 Instalando CristBot-MD...\033[0m"
 
 pkg update -y && pkg upgrade -y
-pkg install -y python ffmpeg aria2 git figlet ruby curl
-gem install lolcat
-pip install -U yt-dlp
+pkg install -y git nodejs ffmpeg libwebp yarn
 
-mkdir -p $HOME/.crist
-curl -sL https://raw.githubusercontent.com/hackcrist/Crist-Descargas-Pro/main/crist-descargas.sh -o $HOME/.crist/crist-descargas.sh
-chmod +x $HOME/.crist/crist-descargas.sh
+cd $HOME
+rm -rf CristBot-MD
+git clone "$REPO"
+cd CristBot-MD
 
-alias_cmd="alias crist-descargas='bash \$HOME/.crist/crist-descargas.sh'"
-grep -qxF "$alias_cmd" $HOME/.bashrc || echo "$alias_cmd" >> $HOME/.bashrc
-grep -qxF "$alias_cmd" $HOME/.zshrc 2>/dev/null || echo "$alias_cmd" >> $HOME/.zshrc
+yarn install || npm install
 
-termux-setup-storage
+if [ -f "$HOME/$DB_FILE" ]; then
+  mv "$HOME/$DB_FILE" "$BOT_DIR/$DB_FILE"
+fi
 
-echo -e "\n${GREEN}✔ Instalación completada.${NC}"
-echo -e "${YELLOW}Usa el comando:${NC} ${BLUE}crist-descargas${NC}"
+echo -e "\033[1;34m\n🔗 Visita y suscríbete al canal YouTube:\033[0m"
+echo -e "\033[1;33m👉 https://www.youtube.com/@TechConWin\033[0m\n"
+
+echo -e "\033[1;32m✅ Iniciando el bot...\033[0m\n"
+npm start
